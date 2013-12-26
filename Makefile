@@ -22,5 +22,6 @@ obj:
 	mkdir obj
 
 clean:
+	find . -name "*~" -exec rm -vf \{\} \;
+	find . -name "*.o" -exec rm -vf \{\} \;
 	rm -rf obj out
-	rm -f *~ src/*~
