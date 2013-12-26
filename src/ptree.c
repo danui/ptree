@@ -5,7 +5,6 @@ struct app_st app[1];
 static void show_usage(void);
 static int tree_main(int argc, char **argv);
 static int visit_dir_path(const char *dir_path);
-static int visit_dir(const char *path, const char *prefix, DIR *dir, int depth);
 
 int main (int argc, char **argv)
 {
@@ -60,9 +59,7 @@ static void show_usage(void)
 static int tree_main(int argc, char **argv)
 {
     int ret = 0;
-    int err;
     int i;
-    DIR *dir = NULL;
 
     if (argc > 0)
     {

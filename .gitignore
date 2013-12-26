@@ -2,6 +2,7 @@ out/
 obj/
 
 *~
+.sconsign.dblite
 
 # Object files
 *.o
